@@ -4,7 +4,7 @@ echo timer > /sys/class/leds/led0/trigger
 cd /data
 rm -f new.sha1
 if wget http://pirate.sh/latest-pirateship.img.gz.sha1 -O new.sha1; then
-  if [[ ! -e latest-pirateship.img.gz.sha1 ]] || [[ `cat new.sha1` != `cat latest-pirateship.img.gz.sha1` ]]; then
+  if [[ ! -e latest-pirateship.img.gz ]] || [[ ! -e latest-pirateship.img.gz.sha1 ]] || [[ `cat new.sha1` != `cat latest-pirateship.img.gz.sha1` ]]; then
     rm -f latest-pirateship.img.gz
     wget http://pirate.sh/latest-pirateship.img.gz
     rm -f latest-pirateship.img.gz.sha1
