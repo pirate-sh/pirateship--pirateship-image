@@ -18,6 +18,8 @@ if [[ -b /dev/sdb ]]; then
   sync
   sync
   sync
+  echo none > /sys/class/leds/led0/trigger
+else
+  echo default-on > /sys/class/leds/led0/trigger
 fi
 
-echo none > /sys/class/leds/led0/trigger
