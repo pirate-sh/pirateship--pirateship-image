@@ -13,7 +13,7 @@ if wget http://pirate.sh/latest-pirateship.img.gz.sha1 -O new.sha1; then
 fi
 
 echo heartbeat > /sys/class/leds/led0/trigger
-if [[ -b /dev/sdb ]]; then
+if [[ -b /dev/sdb ]] && [[ -e latest-pirateship.img.gz ]]; then
   zcat latest-pirateship.img.gz > /dev/sdb
   sync
   sync
