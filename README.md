@@ -1,9 +1,9 @@
 # pirateship--pirateship-image
-use pirateship to create a new pirateship image on SD card
+use a raspberry pi running [pirateship image](http://pirate.sh/) to create more pirateship images
 
 needed Hardware:
-- raspberry pi
-- sd card with pirateship image
-- usb stick
+- raspberry pi (B, B+ or 2B)
+- (micro)sd card with [pirateship image](http://pirate.sh/latest-pirateship.img.gz)
+- usb stick (>2GB)
 - usb (micro)sd card holder
-- additional (micro)sd card
+- additional (empty) (micro)sd card
